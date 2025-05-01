@@ -1,7 +1,7 @@
 function Header({ onPageChange, activePage }) {
   return (
     <header className="header">
-      <h1>Philippines Educational Tour 2025</h1>
+      <h1>CCS Educational Tour 2025</h1>
       <nav>
         <ul>
           <li>

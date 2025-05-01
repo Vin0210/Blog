@@ -58,7 +58,7 @@ export const tourData = [
     learnings: "I gained valuable insights into how the Philippine economy functions, from monetary policy to emerging technologies. The Central Bank's role in maintaining economic stability was particularly interesting, as was seeing how local tech companies are innovating.",
     images: [
       { day: 4, title: "Central Bank Building", imageUrl:"/images/BSP.JPG" },
-      { day: 4, title: "Currency Museum" },
+      { day: 4, title: "EDSA", imageUrl:"/images/way.JPG" },
       { day: 4, title: "Tech Innovation Center", imageUrl:"/images/Hytech.JPG" }
     ]
   },
@@ -74,7 +74,7 @@ export const tourData = [
     images: [
       { day: 5, title: "LRT Control Room",  imageUrl:"/images/Control.JPG" }, 
       { day: 5, title: "Train System",  imageUrl:"/images/LRT.JPG" },
-      { day: 5, title: "MMDA Headquarters" }
+      { day: 5, title: "MMDA Headquarters",  imageUrl:"/images/mmda.jpg" }
     ]
   },
   {
@@ -90,10 +90,10 @@ export const tourData = [
     description: "Day six took us to the mountain city of Baguio, known as the Philippines' summer capital. We visited its famous strawberry farms, the unique Bell Church, the prestigious Philippine Military Academy, the President's summer residence (The Mansion), and enjoyed panoramic views at Mines View Park.",
     learnings: "Baguio offered insights into the Philippines' agricultural practices, military training, and highland culture. The cooler climate and unique topography have shaped this region differently from the lowlands, creating distinct industries and lifestyles.",
     images: [
-      { day: 6, title: "Strawberry Fields" },
-      { day: 6, title: "Bell Church" },
-      { day: 6, title: "PMA Grounds" },
-      { day: 6, title: "The Mansion" },
+      { day: 6, title: "Strawberry Fields", imageUrl:"/images/strawberry.jpg" },
+      { day: 6, title: "Bell Church", imageUrl:"/images/bellchurch.JPG" },
+      { day: 6, title: "PMA Grounds", imageUrl:"/images/pma.jpg" },
+      { day: 6, title: "The Mansion",imageUrl:"/images/mansion.jpg" },
       { day: 6, title: "Mines View Overlook" , imageUrl:"/images/Baguio.jpg"}
     ]
   },
@@ -107,9 +107,9 @@ export const tourData = [
     description: "Our seventh day allowed for personal exploration of Baguio City in the morning. Some of us visited local markets for souvenirs, while others enjoyed the city parks. By noon, we departed for Manila, reflecting on our highland experiences during the journey.",
     learnings: "Having free time to explore independently allowed me to discover hidden gems in Baguio and connect with locals. The contrast between highland and lowland Philippines became even more apparent during our return journey to Manila.",
     images: [
-      { day: 7, title: "Baguio Market" },
-      { day: 7, title: "City Park" },
-      { day: 7, title: "Mountain Highway" }
+      { day: 7, title: "Baguio Market", imageUrl:"/images/market.jpg" },
+      { day: 7, title: "City Park", imageUrl:"/images/burnham.jpg" },
+      { day: 7, title: "Mountain Highway", imageUrl:"/images/highway.jpg" }
     ]
   },
   {
@@ -122,9 +122,9 @@ export const tourData = [
     description: "Our final day marked the end of our educational tour as we traveled from Quezon to Ninoy Aquino International Airport (NAIA) and boarded our flight to Zamboanga. This transit day gave us time to reflect on everything we had learned and experienced.",
     learnings: "As we concluded our tour, I reflected on the diverse aspects of Philippine society, economy, and culture we had witnessed. From historical sites to modern institutions, this educational journey provided a comprehensive understanding of the country's past, present, and potential future.",
     images: [
-      { day: 8, title: "NAIA Terminal", imageUrl:"/images/Manila.jpg" },
-      { day: 8, title: "Departure Lounge" },
-      { day: 8, title: "Aerial View of Manila" }
+      { day: 8, title: "NAIA Terminal", imageUrl:"/images/NAIA.jpg" },
+      { day: 8, title: "Departure Lounge", imageUrl:"/images/depart.jpg" },
+      { day: 8, title: "Aerial View of Manila", imageUrl:"/images/mnl.jpg" }
     ]
   }
 ];

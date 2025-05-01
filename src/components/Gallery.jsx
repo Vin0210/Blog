@@ -3,12 +3,21 @@ import { useState } from 'react';
 
 function Gallery({ tourData }) {
   const [filter, setFilter] = useState('all');
+  const [selectedImage, setSelectedImage] = useState(null);
   
   const filteredImages = filter === 'all' 
     ? tourData.flatMap(day => day.images || [{ day: day.id, title: day.title }]) 
     : tourData
         .filter(day => day.id === parseInt(filter))
         .flatMap(day => day.images || [{ day: day.id, title: day.title }]);
+
+  const openImage = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <div className="gallery-container">
@@ -35,9 +44,9 @@ function Gallery({ tourData }) {
 
       <div className="gallery-grid">
         {filteredImages.map((image, index) => (
-          <div className="gallery-item" key={index}>
+          <div className="gallery-item" key={index} onClick={() => openImage(image)}>
             <img 
-              src={image.imageUrl}  // Ensure this is correctly pulling the imageUrl
+              src={image.imageUrl}
               alt={`Day ${image.day} - ${image.title}`} 
             />
             <div className="gallery-caption">
@@ -46,6 +55,21 @@ function Gallery({ tourData }) {
           </div>
         ))}
       </div>
+
+      {selectedImage && (
+        <div className="image-modal" onClick={closeImage}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <span className="close-button" onClick={closeImage}>&times;</span>
+            <img 
+              src={selectedImage.imageUrl} 
+              alt={`Day ${selectedImage.day} - ${selectedImage.title}`} 
+            />
+            <div className="modal-caption">
+              <strong>Day {selectedImage.day}:</strong> {selectedImage.title}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
