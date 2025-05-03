@@ -6,7 +6,7 @@ function About() {
         <div className="about-section">
           <h3>Tour Overview</h3>
           <p>
-          This 8-day educational tour across the Philippines was designed to provide students with a comprehensive understanding of Filipino culture, history, infrastructure, economic development, and the growing impact of technology. From the bustling metropolis of Manila to the cool mountain city of Baguio, we explored diverse aspects of this fascinating country.
+          This 8-day educational tour in certain parts of the Philippines was designed to provide students with a comprehensive understanding of Filipino culture, history, infrastructure, economic development, and the growing impact of technology. From the bustling metropolis of Manila to the cool mountain city of Baguio, we explored diverse aspects of this fascinating country.
           </p>
         </div>
         

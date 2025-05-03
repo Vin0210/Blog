@@ -26,7 +26,7 @@ export const tourData = [
     description: "The second day took us to Subic Bay, a former American naval base converted into a special economic zone. We explored the area's transformation from military use into a thriving commercial and tourism center.",
     learnings: "Subic Bay demonstrates successful economic conversion and sustainable development. I learned how the Philippines transformed military infrastructure into economic opportunities, creating jobs and promoting tourism while preserving natural resources.",
     images: [
-      { day: 2, title: "Subic Bay Waterfront", imageUrl:"/images/Subic1.JPG" },
+      { day: 2, title: "Subic Bay", imageUrl:"/images/Subic1.JPG" },
       { day: 2, title: "Former Naval Facilities", imageUrl:"/images/Subic3.JPG" },
       { day: 2, title: "Industrial Zone", imageUrl:"/images/Subic2.JPG" }
     ]
@@ -43,8 +43,8 @@ export const tourData = [
     learnings: "This day highlighted the rich natural heritage of the Philippines and its political history. The biodiversity exhibits showed why conservation is crucial for the country, while the presidential museums offered insights into Filipino leadership through the decades.",
     images: [
       { day: 3, title: "Museum Exhibit", imageUrl:"/images/Nationalmuseum.JPG"},
-      { day: 3, title: "Quezon Memorial", imageUrl:"/images/Quezon.JPG" },
-      { day: 3, title: "Presidential Vehicles", imageUrl:"/images/Car.JPG" }
+      { day: 3, title: "Quezon Memorial Circle", imageUrl:"/images/Quezon.JPG" },
+      { day: 3, title: "Presidential Vehicle", imageUrl:"/images/Car.JPG" }
     ]
   },
   {
@@ -57,7 +57,7 @@ export const tourData = [
     description: "Our fourth day focused on the Philippines' financial systems and technology industry. We toured the Central Bank to learn about monetary policy and currency production, then visited Hytech to see innovations in the country's growing tech sector.",
     learnings: "I gained valuable insights into how the Philippine economy functions, from monetary policy to emerging technologies. The Central Bank's role in maintaining economic stability was particularly interesting, as was seeing how local tech companies are innovating.",
     images: [
-      { day: 4, title: "Central Bank Building", imageUrl:"/images/BSP.JPG" },
+      { day: 4, title: "Bangko Sentral Building", imageUrl:"/images/BSP.JPG" },
       { day: 4, title: "EDSA", imageUrl:"/images/way.JPG" },
       { day: 4, title: "Tech Innovation Center", imageUrl:"/images/Hytech.JPG" }
     ]
@@ -107,7 +107,7 @@ export const tourData = [
     description: "Our seventh day allowed for personal exploration of Baguio City in the morning. Some of us visited local markets for souvenirs, while others enjoyed the city parks. By noon, we departed for Manila, reflecting on our highland experiences during the journey.",
     learnings: "Having free time to explore independently allowed me to discover hidden gems in Baguio and connect with locals. The contrast between highland and lowland Philippines became even more apparent during our return journey to Manila.",
     images: [
-      { day: 7, title: "Baguio Market", imageUrl:"/images/market.jpg" },
+      { day: 7, title: "Baguio Night Market", imageUrl:"/images/market.jpg" },
       { day: 7, title: "City Park", imageUrl:"/images/burnham.jpg" },
       { day: 7, title: "Mountain Highway", imageUrl:"/images/highway.jpg" }
     ]
