@@ -29,10 +29,10 @@ function App() {
     if (searchTerm.trim() === '') {
       setFilteredDays(tourData);
     } else {
-      const filtered = tourData.filter(day => 
+      const filtered = tourData.filter(day =>
         day.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         day.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        day.activities.some(activity => 
+        day.activities.some(activity =>
           activity.toLowerCase().includes(searchTerm.toLowerCase())
         )
       );
@@ -66,22 +66,22 @@ function App() {
       return <LoadingSpinner />;
     }
 
-    switch(activePage) {
+    switch (activePage) {
       case 'home':
         return (
           <>
             <div className="tour-overview">
               <h2>My 8-Day Educational Tour: Manila, Subic, Baguio & Beyond</h2>
-              <p>Join me on a journey through the Philippines where we explored historical sites, 
-              financial institutions, transportation systems, and natural wonders while learning about
-              the country's rich culture and modern development.</p>
-              
-              
+              <p>Join me on a journey through the Philippines where we explored historical sites,
+                financial institutions, transportation systems, and natural wonders while learning about
+                the country's rich culture and modern development.</p>
+
+
             </div>
-            
+
             <div className="day-navigation">
               {filteredDays.map((day) => (
-                <button 
+                <button
                   key={day.id}
                   className={activeDay === day.id ? 'active' : ''}
                   onClick={() => handleDayChange(day.id)}
@@ -89,18 +89,18 @@ function App() {
                   Day {day.id}: {day.shortTitle}
                 </button>
               ))}
-              <button 
+              <button
                 className={activeDay === null && searchTerm === '' ? 'active' : ''}
                 onClick={resetFilters}
               >
                 All Days
               </button>
             </div>
-            
+
             <div className="tour-content">
-              {activeDay 
-                ? <DayCard day={filteredDays.find(day => day.id === activeDay)} /> 
-                : filteredDays.length > 0 
+              {activeDay
+                ? <DayCard day={filteredDays.find(day => day.id === activeDay)} />
+                : filteredDays.length > 0
                   ? filteredDays.map(day => <DayCard key={day.id} day={day} />)
                   : <div className="no-results">No matching days found. Try a different search term.</div>
               }
@@ -118,9 +118,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header 
-        onPageChange={handlePageChange} 
-        activePage={activePage} 
+      <Header
+        onPageChange={handlePageChange}
+        activePage={activePage}
         searchTerm={activePage === 'gallery' ? searchTerm : ''}
         onSearchChange={activePage === 'gallery' ? setSearchTerm : undefined}
       />

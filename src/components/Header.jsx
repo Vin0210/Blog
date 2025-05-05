@@ -11,9 +11,9 @@ function Header({ onPageChange, activePage }) {
                   className={`nav-button ${activePage === page ? 'active-nav' : ''}`}
                   onClick={() => onPageChange(page)}
                 >
-                  {page === 'home' ? 'Home' : 
-                   page === 'gallery' ? 'Gallery' : 
-                   'About the Tour'}
+                  {page === 'home' ? 'Home' :
+                    page === 'gallery' ? 'Gallery' :
+                      'About the Tour'}
                 </button>
               </li>
             ))}

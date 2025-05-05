@@ -1,4 +1,3 @@
-// src/components/DayCard.jsx
 import { useState } from 'react';
 import ManilaImage from '/images/Manila.jpg';
 import SubicImage from '/images/Subic.JPG';
@@ -39,7 +38,7 @@ function DayCard({ day }) {
     <div className="day-card">
       <h2>Day {day.id}: {day.title}</h2>
       <div className="day-image-container" onClick={openModal}>
-        <img 
+        <img
           src={imageSrc}
           alt={`Day ${day.id} - ${day.title}`}
           className="day-image"
@@ -73,8 +72,8 @@ function DayCard({ day }) {
         <div className="image-modal" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <span className="close-button" onClick={closeModal}>&times;</span>
-            <img 
-              src={currentImage} 
+            <img
+              src={currentImage}
               alt={`Day ${day.id} - ${day.title}`}
               className="modal-image"
             />
